@@ -3,3 +3,18 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
+}
