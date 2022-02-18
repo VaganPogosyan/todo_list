@@ -9,7 +9,12 @@ function appendP() {
     input.value = "";
     return;
   }
-  const p = document.createElement("p");
+  let p;
+  p = document.createElement("p");
+  p.addEventListener("click", () => {
+    p.style.textDecoration = "line-through";
+  });
+
   p.innerText = input.value;
   containerDiv.prepend(p);
   input.value = "";
@@ -21,3 +26,7 @@ input.onkeydown = (event) => {
   if (event.key === "Enter") appendP();
   return;
 };
+
+// p.addEventListener("click", () => {
+//   p.style.textDecoration = "line-through";
+// });
