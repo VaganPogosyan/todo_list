@@ -2,19 +2,70 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  /* border: 2px solid blue; */
+}
+
+.small-container {
+  width: 500px;
+  /* border: 1px solid red; */
+}
+
+.input-div {
+  display: flex;
+  justify-content: space-between;
 }
 
 #input {
-  font-size: 40px;
+  margin-right: 5px;
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+}
+
+button {
+  height: 40px;
+  width: 60px;
+}
+
+.list-todo {
+  border: 2px solid green;
+  max-width: 400px;
+}
+
+.list-done {
+  border: 2px solid purple;
 }
 
 p {
   font-size: 25px;
+  background-color: darkgray;
+}
+
+.list {
+  /* border: 2px solid orange; */
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 30px 30px;
+}
+
+.icon {
+  width: 30px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+ion-icon {
+  font-size: 30px;
 }
