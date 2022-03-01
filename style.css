@@ -29,23 +29,23 @@
   font-size: 20px;
 }
 
-button {
+#add-button {
   height: 40px;
   width: 60px;
 }
 
 .list-todo {
-  border: 2px solid green;
+  background-color: rgb(160, 255, 182);
   max-width: 400px;
 }
 
 .list-done {
-  border: 2px solid purple;
+  background-color: rgb(255, 160, 160);
 }
 
 p {
   font-size: 25px;
-  background-color: darkgray;
+  /* background-color: darkgray; */
 }
 
 .list {
@@ -60,7 +60,8 @@ p {
   grid-template-columns: 1fr 30px 30px;
 }
 
-.icon {
+.icon-done,
+.icon-delete {
   width: 30px;
   cursor: pointer;
   /* border: 1px solid red; */
